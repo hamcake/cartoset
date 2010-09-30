@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100928091507) do
+ActiveRecord::Schema.define(:version => 20100930093320) do
 
   create_table "blog_categories", :force => true do |t|
     t.column "title", :string
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(:version => 20100928091507) do
     t.column "title", :string
     t.column "body", :text
     t.column "draft", :boolean
+    t.column "published_at", :datetime
     t.column "created_at", :datetime
     t.column "updated_at", :datetime
   end
@@ -60,6 +61,20 @@ ActiveRecord::Schema.define(:version => 20100928091507) do
   end
 
   add_index "events", ["id"], :name => "index_events_on_id"
+
+  create_table "features", :force => true do |t|
+    t.column "title", :string
+    t.column "description", :text
+    t.column "gallery_id", :integer
+    t.column "location", :string
+    t.column "position", :integer
+    t.column "created_at", :datetime
+    t.column "updated_at", :datetime
+    t.column "the_geom_point", :geometry
+    t.column "the_geom_polygon", :geometry
+  end
+
+  add_index "features", ["id"], :name => "index_features_on_id"
 
   create_table "galleries", :force => true do |t|
     t.column "name", :string
