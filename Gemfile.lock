@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/Vizzuality/rails-footnotes.git
+  revision: 7dd2a1e02f924615a374485868774a0fa228c9c7
+  specs:
+    rails-footnotes (3.6.7)
+
+GIT
   remote: git://github.com/Vizzuality/refinerycms-blog.git
   revision: 52f741bbc4b96e1229246ca6f9b18862ed713090
   specs:
@@ -29,12 +35,6 @@ GIT
   revision: e85ca1be881e2df4396da5c4482337ab05f6a85d
   specs:
     ppe-postgis-adapter (0.7.8)
-
-GIT
-  remote: git://github.com/indirect/rails-footnotes.git
-  revision: 5fd43b5842bac2a41c271e3d3713d5f721ae4e62
-  specs:
-    rails-footnotes (3.6.7)
 
 GEM
   remote: http://rubygems.org/
