@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101005102349) do
+ActiveRecord::Schema.define(:version => 20101012085758) do
 
   create_table "blog_categories", :force => true do |t|
     t.column "title", :string
@@ -71,7 +71,7 @@ ActiveRecord::Schema.define(:version => 20101005102349) do
     t.column "meta", :text
     t.column "created_at", :datetime
     t.column "updated_at", :datetime
-    t.column "the_geom", :geometry
+    t.column "the_geom", :geometry, :srid => 4326, :null => false
   end
 
   add_index "features", ["id"], :name => "index_features_on_id"
