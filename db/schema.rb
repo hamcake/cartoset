@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101012085758) do
+ActiveRecord::Schema.define(:version => 20101014144144) do
 
   create_table "blog_categories", :force => true do |t|
     t.column "title", :string
@@ -92,6 +92,7 @@ ActiveRecord::Schema.define(:version => 20101012085758) do
     t.column "image_id", :integer
     t.column "position", :integer
     t.column "gallery_id", :integer
+    t.column "entry_type", :integer, :default => 0
     t.column "created_at", :datetime
     t.column "updated_at", :datetime
   end
