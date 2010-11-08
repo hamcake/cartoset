@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0'
+gem 'rails', '3.0.1'
 
 # PostgreSQL
 gem 'pg',                       '0.9.0'
@@ -18,6 +18,7 @@ end
 
 # REFINERY CMS ================================================================
 
+gem 'dragonfly',                '0.7.7'
 gem 'refinerycms',              '= 0.9.8.5'
 
 gem 'refinerycms-inquiries',    '= 0.9.8.4', :require => 'inquiries'
