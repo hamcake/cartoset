@@ -41,6 +41,18 @@ By default we are going to have a different gemset per project.
     rake db:setup
     rails s
 
+## Setting up a new project
+
+    rvm use 1.8.7
+    rvm gemset create new_project
+    rvm use 1.8.7@new_project
+    gem install bundler
+    git clone git@github.com:Vizzuality/new_project.git
+    cd new_project
+    bundle install
+    rake db:setup
+    rails s
+
 ## Developing and extending geoportal
 
 Create a gemset:
