@@ -1,10 +1,4 @@
 GIT
-  remote: git://github.com/Vizzuality/rails-footnotes.git
-  revision: 7dd2a1e02f924615a374485868774a0fa228c9c7
-  specs:
-    rails-footnotes (3.6.7)
-
-GIT
   remote: git://github.com/Vizzuality/refinerycms-blog.git
   revision: 52f741bbc4b96e1229246ca6f9b18862ed713090
   specs:
@@ -87,14 +81,14 @@ GEM
     erubis (2.6.6)
       abstract (>= 1.0.0)
     filters_spam (0.3)
-    friendly_id (3.1.7)
+    friendly_id (3.1.8)
       babosa (~> 0.2.0)
     highline (1.6.1)
     i18n (0.4.2)
     linecache (0.43)
-    mail (2.2.10)
+    mail (2.2.13)
       activesupport (>= 2.3.6)
-      i18n (~> 0.4.1)
+      i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
@@ -173,7 +167,6 @@ DEPENDENCIES
   pg (= 0.9.0)
   ppe-postgis-adapter!
   rails (= 3.0.1)
-  rails-footnotes!
   refinerycms (= 0.9.8.5)
   refinerycms-blog (~> 1.0.rc12)!
   refinerycms-events (= 0.1)!
