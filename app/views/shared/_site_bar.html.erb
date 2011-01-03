@@ -16,7 +16,7 @@
       <h2>POWERED BY GEOPORTAL</h2>
       <h1><a href="/admin">methanehydrates<sup>administrator</sup></a></h1>
       <% unless login? %>
-          <span><a href="#">settings</a> | <%= link_to ('close session'), logout_url(:only_path => true),:id => 'logout' %></span>
+          <span><a href="/refinery/settings">settings</a> | <%= link_to ('close session'), logout_url(:only_path => true),:id => 'logout' %></span>
       <% end %>
     </div>
   </div>

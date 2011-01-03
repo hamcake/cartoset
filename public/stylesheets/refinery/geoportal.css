@@ -1,5 +1,7 @@
 body {margin:0; padding:0;}
-#site_bar {display:inline-block; width:100%; height:111px!important; margin:0; padding:0; background:url('/images/admin/common/site_bar_back.jpg') repeat-x 0 0;}
+
+/*HEADER*/
+#site_bar {float:left; width:100%; height:111px!important; margin:0; padding:0; background:url('/images/admin/common/site_bar_back.jpg') repeat-x 0 0;}
 #site_bar_content {width:942px; margin:0 auto; padding:0;}
 #site_bar_content h2 {font:normal 11px "Museo Sans"; color:#DEDFE4; line-height:11px;}
 #site_bar_content h1 {display:inline; width:400px; line-height:80px;}
@@ -9,4 +11,38 @@ body {margin:0; padding:0;}
 #site_bar_content span {float:right; color:#DEDFE4!important; font:normal 13px "Museo Sans"; line-height:80px;}
 #site_bar_content span a {color:#DEDFE4!important; font:normal 13px "Museo Sans"; border-bottom:1px solid #DEDFE4;}
 #site_bar_content span a:hover {border-bottom:1px dotted #DEDFE4;}
+header {float:left; width:100%; height:90px; margin:0; padding:0px 0 0 0; background:url('/images/admin/common/header_menu_back.jpg') repeat-x 0 0;}
+header div.inner {position:relative; width:942px; height:50px; margin:0 auto;}
+header div.inner nav#menu {top:0; width:942px; height:50px; margin:0;}
+header div.inner nav#menu a {margin:0 2px 0 0; padding:0 0 0 10px; height:56px; background:url('/images/admin/common/menu_left.png') no-repeat 0 0;  border-top-left-radius:0px!important; border-top-right-radius:0px!important;}
+header div.inner nav#menu a span {float:left; height:34px; padding:11px 13px 11px 3px; font:normal 17px "Museo Sans"; color:white; background:url('/images/admin/common/menu_right.png') no-repeat right 0;}
+header div.inner nav#menu a.active {background-position:0 -56px;}
+header div.inner nav#menu a.active span {background-position: right -56px;}
+header div.inner nav#menu a:hover {background-position:0 -56px;}
+header div.inner nav#menu a:hover span {background-position:right -56px;}
+header div.inner nav#menu a#menu_reorder {background:none;}
+header div.inner nav#menu a#menu_reorder_done {background:none;}
 
+#page_container {float:left; width:100%; padding:0; margin:0; background:none;}
+#page_container #page {width:952px!important; margin:0 auto;}
+#page_container #page #content {background:none;}
+
+/*FLASH MESSAGE*/
+div.flash_notice {width:100%; width:872px; height:85px; padding:0 40px; background:url('/images/admin/common/success_bkg.png'); border:none;}
+div.flash_notice p {float:left; margin:30px 0 0 0; padding:0 0 0 20px; font:normal 15px Arial; color:#6EB457; background:url('/images/admin/icons/ok.png') no-repeat 0 2px;}
+div.flash_notice a#flash_close {top:35px; right:20px; width:9px; height:9px; text-indent:-9999px; font-size:0; background:url('/images/admin/icons/close.png') no-repeat 0 0; border:none; text-decoration:none;}
+div.flash_notice a#flash_close:hover {background-position:0 -9px; border:none;}
+
+/*DASHBOARD*/
+div#actions {float:left; width:100%; margin:0; padding:0; background:none;}
+div#actions ul {width:100%;}
+div#actions ul li {display:inline-block; width:224px!important; height:126px!important; margin:0 14px 0 0 ; background:none;}
+div#actions ul li.last {margin:0;}
+div#actions ul li a {width:194px!important; height:92px!important; padding:15px; margin:0; background:url('/images/admin/dashboard/big_button.png') no-repeat 0 0; font:normal 21px "Museo Sans"; color:#333333; line-height:92px; border:none; text-align:center;}
+div#actions ul li a:hover {background:url('/images/admin/dashboard/big_button.png') no-repeat 0 -126px; color:black;}
+div#records {width:952px;}
+div#recent_activity {width:952px; background:none;}
+div#recent_activity div.top {float:left; width:100%; height:77px; background-color:none; background:url('/images/admin/backgrounds/top_grey.png') no-repeat 0 0;}
+div#recent_activity div.top h2 {padding:0 0 0 35px; font:normal 25px "Museo Sans"; color:#333333; line-height:77px;}
+div#recent_activity div.middle {float:left; width:100%; height:auto; background-color:none; background:url('/images/admin/backgrounds/middle_white.png') repeat-y 0 0;}
+div#recent_activity div.bottom {float:left; width:100%; height:58px; background-color:none; background:url('/images/admin/backgrounds/bottom_grey.png') no-repeat 0 0;}
