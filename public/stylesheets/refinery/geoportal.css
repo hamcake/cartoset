@@ -1,0 +1,12 @@
+body {margin:0; padding:0;}
+#site_bar {display:inline-block; width:100%; height:111px!important; margin:0; padding:0; background:url('/images/admin/common/site_bar_back.jpg') repeat-x 0 0;}
+#site_bar_content {width:942px; margin:0 auto; padding:0;}
+#site_bar_content h2 {font:normal 11px "Museo Sans"; color:#DEDFE4; line-height:11px;}
+#site_bar_content h1 {display:inline; width:400px; line-height:80px;}
+#site_bar_content h1 a {font:bold 25px Arial; color:white; text-decoration:none!important; border:none;}
+#site_bar_content h1 a:hover {border:none;}
+#site_bar_content h1 a sup {padding:0 0 0 5px; font:normal 13px "Museo Sans"; color:#FF3366;}
+#site_bar_content span {float:right; color:#DEDFE4!important; font:normal 13px "Museo Sans"; line-height:80px;}
+#site_bar_content span a {color:#DEDFE4!important; font:normal 13px "Museo Sans"; border-bottom:1px solid #DEDFE4;}
+#site_bar_content span a:hover {border-bottom:1px dotted #DEDFE4;}
+
