@@ -1,5 +1,5 @@
 body {margin:0; padding:0;}
-
+ul {list-style:none!important;}
 /*FONTS FONT-FACE*/
 @font-face {
 	font-family: 'Museo Sans';
@@ -16,6 +16,19 @@ body {margin:0; padding:0;}
 	font-weight: normal;
 	font-style: normal;
 }
+
+/* SEARCH PARTIAL (_search.html.erb) */
+.search_form{position:relative; width:705px; height:auto;}
+.search_form span.top {float:left; width:705px; height:10px; background:url('/images/admin/search/top_search.png') no-repeat 0 0;}
+.search_form span.content {float:left; width:705px; height:auto; background:url('/images/admin/search/content_search.png') repeat-y 0; padding:0 0 28px 0;}
+.search_form span.content label {float:left; font:bold 11px Arial; color:#999999; text-transform:uppercase; width:100%; margin:20px 0 0 30px;}
+.search_form #search{float:left; width:612px; height:37px; background:url('/images/admin/search/input_search.png') no-repeat 0 0; font:normal 17px Arial; color:#CCCCCC; border:0px; margin:5px 0 0 29px; padding:0 12px;}
+.search_form input.button{background:url('/images/admin/search/button.jpg') no-repeat 0 0; width:15px; height:15px; position:absolute; top:60px; right:35px;}
+.search_form input.button:hover {background:url('/images/admin/search/button.jpg') no-repeat 0 0; background-position:0!important;}
+.search_form span.bottom {float:left; width:705px; height:10px; background:url('/images/admin/search/bottom_search.png') no-repeat 0 0;}
+.search_form .button,.search_form .button-wrapper{position:absolute;right:0px;top:0px;}
+form input[type=submit]:hover{background:#65c3f7;}
+.search_list {padding:0!important;}
 
 /*HEADER*/
 #site_bar {float:left; width:100%; height:111px!important; margin:0; padding:0; background:url('/images/admin/common/site_bar_back.jpg') repeat-x 0 0;}
@@ -53,11 +66,12 @@ div.flash_notice a#flash_close:hover {background-position:0 -9px; border:none;}
 /*DASHBOARD*/
 div#actions {float:left; width:100%; margin:0; padding:0; background:none;}
 div#actions ul {width:100%;}
-div#actions ul li {display:inline-block; width:224px!important; height:126px!important; margin:0 14px 0 0 ; background:none;}
-div#actions ul li.last {margin:0;}
-div#actions ul li a {width:194px!important; height:92px!important; padding:15px; margin:0; background:url('/images/admin/dashboard/big_button.png') no-repeat 0 0; font:normal 21px "Museo Sans"; color:#333333; line-height:92px; border:none; text-align:center;}
+div#actions ul li {float:left; display:inline-block; width:auto!important; height:126px!important; margin:0 14px 0 0 ; background:none;}
+div#actions ul li.last {margin:0; float:right;}
+div#actions ul li a {width:194px!important; height:40px!important; padding:40px 15px; margin:0; background:url('/images/admin/dashboard/big_button.png') no-repeat 0 0; font:normal 21px "Museo Sans"; color:#333333; line-height:23px; border:none; text-align:center;}
 div#actions ul li a:hover {background:url('/images/admin/dashboard/big_button.png') no-repeat 0 -126px; color:black;}
-div#records {width:952px;}
+div#records {width:952px; margin:20px 0 0 0;}
+div#records ul#sortable_list {float:left; width:100%;}
 div#records .on{background-color:white;}
 div#records .off,#records .on-hover{background-color:white;}
 div#records ul.clickable {width:941px; padding:0; margin:0 0 0 5px;}
@@ -65,8 +79,10 @@ div#records ul.clickable li {list-style:none; width:100%; padding:0; margin:0; b
 div#records ul.clickable li a{padding:0;vertical-align:middle;margin-bottom:2px;line-height:35px;display:block;border-bottom:0px none; font:normal 15px Arial; ; margin:17px 0 0 30px; color:#333333;}
 div#records ul.clickable li a p {color:#FF3366; text-decoration:underline;}
 div#records ul.clickable li a:hover p {}
-div#recent_activity {width:952px; background:none;}
-div#recent_activity div.top {float:left; width:100%; height:77px; background-color:none; background:url('/images/admin/backgrounds/top_grey.png') no-repeat 0 0;}
-div#recent_activity div.top h2 {padding:0 0 0 35px; font:normal 25px "Museo Sans"; color:#333333; line-height:77px;}
-div#recent_activity div.middle {float:left; width:100%; height:auto; background-color:none; background:url('/images/admin/backgrounds/middle_white.png') repeat-y 0 0;}
-div#recent_activity div.bottom {float:left; width:100%; height:58px; background-color:none; background:url('/images/admin/backgrounds/bottom_grey.png') no-repeat 0 0;}
+
+/* LIST OF ACTIVITIES, FEATURES,... */
+div#recent_activity,#records {width:952px; background:none;}
+div#recent_activity,#records div.top {float:left; width:100%; height:77px; background-color:none; background:url('/images/admin/backgrounds/top_grey.png') no-repeat 0 0;}
+div#recent_activity,#records div.top h2 {padding:0 0 0 35px; font:normal 25px "Museo Sans"; color:#333333; line-height:77px;}
+div#recent_activity,#records div.middle {float:left; width:100%; height:auto; background-color:none; background:url('/images/admin/backgrounds/middle_white.png') repeat-y 0 0;}
+div#recent_activity,#records div.bottom {float:left; width:100%; height:58px; background-color:none; background:url('/images/admin/backgrounds/bottom_grey.png') no-repeat 0 0;}

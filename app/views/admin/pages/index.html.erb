@@ -3,7 +3,7 @@
     <li>
       <%= render :partial => "/shared/admin/search", :locals => {:url => admin_pages_url} %>
     </li>
-    <li>
+    <li class="last">
       <%= link_to t('.create_new_page'), new_admin_page_url, :class => "add_icon" %>
     </li>
   <% if Page.count > 1 and not searching? %>

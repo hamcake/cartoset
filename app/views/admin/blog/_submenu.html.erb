@@ -1,13 +1,13 @@
-<nav id='actions' class='multilist'>
-  <ul class='search_list'>
-    <li>
-      <%= render :partial => "/shared/admin/search",
-                 :locals => {
-                   :url => admin_blog_posts_url
-                 } %>
-    </li>
-  </ul>
+<ul class='search_list'>
+  <li>
+    <%= render :partial => "/shared/admin/search",
+               :locals => {
+                 :url => admin_blog_posts_url
+               } %>
+  </li>
+</ul>
 
+<nav id='actions' class='multilist'>
   <ul class='collapsible_menu'>
     <li>
       <%= link_to t('.posts.title'), '#',

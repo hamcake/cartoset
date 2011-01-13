@@ -6,7 +6,7 @@
                     :url => admin_features_url
                   } %>
     </li>
-    <li>
+    <li class="last">
       <%= link_to t('.create_new'), new_admin_feature_url,
                    :class => "add_icon" %>
     </li>
@@ -27,7 +27,11 @@
   </ul>
 </div>
 <div id='records'>
-  <% if searching? %>
+    <div class="top">
+        <h2>All features</h2>
+    </div>
+      
+  <% if searching? %>  
     <h2><%= t('shared.admin.search.results_for', :query => params[:search]) %></h2>
     <% if @features.any? %>
       <%= will_paginate @features, :previous_label => '&laquo;', :next_label => '&raquo;' %>

@@ -1,5 +1,10 @@
 <form method="GET" action="<%= url %>" class="search_form">
-  <input id="search" name="search" size="22" type="search" value="<%= params[:search] %>" />
-  <input id="dialog" name="dialog" type="hidden" value="<%= from_dialog? %>" />
-  <%= submit_tag t('shared.admin.search.button_text'), :name => nil %>
+  <span class="top"></span>
+  <span class="content">
+      <label>SEARCH</label>
+      <input id="search" name="search" size="22" type="search" value="<%= params[:search] %>" />
+      <input id="dialog" name="dialog" type="hidden" value="" />
+      <input class="button" name="commit" type="submit" value="" />
+  </span>
+  <span class="bottom"></span>
 </form>
