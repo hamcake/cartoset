@@ -1,5 +1,22 @@
 body {margin:0; padding:0;}
 
+/*FONTS FONT-FACE*/
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('fonts/museosans_500_italic-webfont.eot');
+	src: local('☺'), url('fonts/museosans_500_italic-webfont.woff') format('woff'), url('fonts/museosans_500_italic-webfont.ttf') format('truetype'), url('fonts/museosans_500_italic-webfont.svg#webfontrWMt54Br') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('fonts/museosans_500-webfont.eot');
+	src: local('☺'), url('fonts/museosans_500-webfont.woff') format('woff'), url('fonts/museosans_500-webfont.ttf') format('truetype'), url('fonts/museosans_500-webfont.svg#webfontnw1AQrE0') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /*HEADER*/
 #site_bar {float:left; width:100%; height:111px!important; margin:0; padding:0; background:url('/images/admin/common/site_bar_back.jpg') repeat-x 0 0;}
 #site_bar_content {width:942px; margin:0 auto; padding:0;}
@@ -41,6 +58,13 @@ div#actions ul li.last {margin:0;}
 div#actions ul li a {width:194px!important; height:92px!important; padding:15px; margin:0; background:url('/images/admin/dashboard/big_button.png') no-repeat 0 0; font:normal 21px "Museo Sans"; color:#333333; line-height:92px; border:none; text-align:center;}
 div#actions ul li a:hover {background:url('/images/admin/dashboard/big_button.png') no-repeat 0 -126px; color:black;}
 div#records {width:952px;}
+div#records .on{background-color:white;}
+div#records .off,#records .on-hover{background-color:white;}
+div#records ul.clickable {width:941px; padding:0; margin:0 0 0 5px;}
+div#records ul.clickable li {list-style:none; width:100%; padding:0; margin:0; border-bottom:1px solid #E5E5E5; height:33px;}
+div#records ul.clickable li a{padding:0;vertical-align:middle;margin-bottom:2px;line-height:35px;display:block;border-bottom:0px none; font:normal 15px Arial; ; margin:17px 0 0 30px; color:#333333;}
+div#records ul.clickable li a p {color:#FF3366; text-decoration:underline;}
+div#records ul.clickable li a:hover p {}
 div#recent_activity {width:952px; background:none;}
 div#recent_activity div.top {float:left; width:100%; height:77px; background-color:none; background:url('/images/admin/backgrounds/top_grey.png') no-repeat 0 0;}
 div#recent_activity div.top h2 {padding:0 0 0 35px; font:normal 25px "Museo Sans"; color:#333333; line-height:77px;}
