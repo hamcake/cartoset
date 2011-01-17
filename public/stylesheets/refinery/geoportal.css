@@ -73,11 +73,13 @@ div#actions ul li.last {margin:0; float:right;}
 div#actions ul li a {width:194px!important; height:40px!important; padding:40px 15px; margin:0; background:url('/images/admin/dashboard/big_button.png') no-repeat 0 0; font:normal 21px "Museo Sans"; color:#333333; line-height:23px; border:none; text-align:center;}
 div#actions ul li a:hover {background:url('/images/admin/dashboard/big_button.png') no-repeat 0 -126px; color:black;}
 div#records {width:952px; margin:20px 0 0 0;}
-div#records ul#sortable_list {float:left; width:900px;}
-div#records ul#sortable_list li {position:relative; height:70px; padding:20px 0 0 0;}
-div#records ul#sortable_list li a {font:normal 15px Arial; color:#FF3366; text-decoration:underline; border-bottom:none; margin:;}
+div#records ul#sortable_list {float:left; width:942px; padding:0!important; margin:0 0 0 5px;}
+div#records ul#sortable_list li {position:relative; height:70px; padding:20px 0 0 30px; border-bottom:1px solid #E3E3E3; width:912px;}
+div#records ul#sortable_list li.on {background-color:white;} 
+div#records ul#sortable_list li.on-hover {background-color:#FAFAFA;} 
+div#records ul#sortable_list li a {font:normal 15px Arial; color:#FF3366; text-decoration:underline; border-bottom:none;}
 div#records ul#sortable_list li a:hover {color:#B3002D;}
-div#records ul#sortable_list div#icons {position:absolute; left:0!important; bottom:0px!important; bottom:23px!important; height:22px;}
+div#records ul#sortable_list div#icons {position:absolute; left:30px!important; bottom:0px!important; bottom:23px!important; height:22px; margin:0;}
 div#records ul#sortable_list div#icons a {float:left; font:normal 13px Arial; color:#666666; text-decoration:underline; margin:0 15px 0 0;}
 div#records ul#sortable_list div#icons a:hover {color:#4D4D4D!important;}
 div#records ul#sortable_list a.view {background:url('/images/admin/common/view_icon.png') no-repeat 0 bottom; padding:1px 0 0 22px;}

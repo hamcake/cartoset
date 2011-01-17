@@ -11,19 +11,22 @@
       <%= link_to t('.create_new'), new_admin_feature_url,
                    :class => "add_icon" %>
     </li>
-  <% if !searching? and Feature.count > 1 %>
-    <li>
-      <%= link_to t('refinery.reorder', :what => "Features"),
-                   admin_features_url,
-                   :id => "reorder_action",
-                   :class => "reorder_icon" %>
+                  <!-- To allow the reorder action -->
+                  <% if false %>  
+                    <% if !searching? and Feature.count > 1 %>
+                      <li>
+                        <%= link_to t('refinery.reorder', :what => "Features"),
+                                     admin_features_url,
+                                     :id => "reorder_action",
+                                     :class => "reorder_icon" %>
 
-      <%= link_to t('refinery.reorder_done', :what => "Features"),
-                   admin_features_url,
-                   :id => "reorder_action_done",
-                   :style => "display: none;",
-                   :class => "reorder_icon" %>
-    </li>
+                        <%= link_to t('refinery.reorder_done', :what => "Features"),
+                                     admin_features_url,
+                                     :id => "reorder_action_done",
+                                     :style => "display: none;",
+                                     :class => "reorder_icon" %>
+                      </li>
+                  <%end%>
   <% end %>
   </ul>
 </div>

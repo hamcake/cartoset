@@ -3,4 +3,5 @@
       <%= render :partial => 'feature', :collection => @features %>
     </ul>
 </div>
+<div class="bottom"></div>
 <%= render :partial => "/shared/admin/sortable_list", :locals => {:continue_reordering => (defined?(continue_reordering) ? continue_reordering : true)} %>
