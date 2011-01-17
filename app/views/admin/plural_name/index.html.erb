@@ -3,6 +3,7 @@
     <li>
       <%%= render :partial => "/shared/admin/search",
                   :locals => {
+                    :name_to_search => nil,
                     :url => admin_<%= plural_name %>_url
                   } %>
     </li>

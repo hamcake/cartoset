@@ -8,3 +8,12 @@ en:
       recent_activity:
         was: was
         ago: ago
+      search:
+        blogs: search blogs
+        events: search events
+        features: search features
+        galleries: search galleries
+        images: search images
+        pages: search pages
+        resources: search resources
+  search: search

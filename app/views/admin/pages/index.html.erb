@@ -1,7 +1,7 @@
 <div id='actions'>
   <ul>
     <li>
-      <%= render :partial => "/shared/admin/search", :locals => {:url => admin_pages_url} %>
+      <%= render :partial => "/shared/admin/search", :locals => {:url => admin_pages_url,:name_to_search => "pages"} %>
     </li>
     <li class="last">
       <%= link_to t('.create_new_page'), new_admin_page_url, :class => "add_icon" %>

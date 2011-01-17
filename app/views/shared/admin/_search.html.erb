@@ -1,7 +1,13 @@
 <form method="GET" action="<%= url %>" class="search_form">
   <span class="top"></span>
   <span class="content">
-      <label>SEARCH</label>
+      
+      <%if !name_to_search.blank? %>
+        <label><%= t('admin.dashboard.search' + '.' + name_to_search) %></label>
+      <%else %>
+        <label><%= t('search') %></label>      
+      <%end %>
+      
       <input id="search" name="search" size="22" type="search" value="<%= params[:search] %>" />
       <input id="dialog" name="dialog" type="hidden" value="" />
       <input class="button" name="commit" type="submit" value="" />

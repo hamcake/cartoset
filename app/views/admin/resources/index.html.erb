@@ -1,7 +1,7 @@
 <div id='actions'>
   <ul>
     <li>
-      <%= render :partial => "/shared/admin/search", :locals => {:url => admin_resources_url} %>
+      <%= render :partial => "/shared/admin/search", :locals => {:url => admin_resources_url,:name_to_search => "resources"} %>
     </li>
     <li>
       <%= link_to t('.upload_new'), new_admin_resource_url(:dialog => true, :width => 600, :height => 300), :class => "add_icon" %>

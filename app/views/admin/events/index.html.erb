@@ -3,7 +3,8 @@
     <li>
       <%= render :partial => "/shared/admin/search",
                   :locals => {
-                    :url => admin_events_url
+                    :url => admin_events_url,
+                    :name_to_search => "events"
                   } %>
     </li>
     <li class="last">
