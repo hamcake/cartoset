@@ -3,3 +3,8 @@
 
 en:
   hello: "Hello world"
+  admin:
+    dashboard:
+      recent_activity:
+        was: was
+        ago: ago

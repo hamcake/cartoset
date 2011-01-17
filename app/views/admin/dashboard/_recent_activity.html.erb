@@ -5,11 +5,14 @@
   <div class="middle">
     <ul class='clickable'>
     <% @recent_activity.each do |change|
-         if (message = (activity_message_for(change) rescue nil)).present? %>
+      name, date_in_words, action_name, href = activity_message_for(change)
+     %>
            <li class='<%= cycle("on", "on-hover", :name => 'recent_activity_cycle') %>'>
-             <%= message.html_safe %>
+             <%# message.html_safe %>
+             <p><%= name %></p><p><%= date_in_words %></p>
+             <p><%= action_name %></p><p><%= href %></p>
            </li>
-      <% end
+      <%
       end %>
     </ul>
   </div>
