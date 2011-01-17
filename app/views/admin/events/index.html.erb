@@ -45,8 +45,12 @@
     <% end %>
   <% else %>
     <% if @events.any? %>
-      <div class="top event">
+      <div class="top events">
           <h2>All events</h2>
+          <div class="date_box">
+            <a class="date">Date<span></span></a>
+          </div>
+          <p>Location</p>
       </div>
     
       <%= will_paginate @events,

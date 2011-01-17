@@ -17,3 +17,5 @@ en:
         pages: search pages
         resources: search resources
   search: search
+  from: from
+  to: to

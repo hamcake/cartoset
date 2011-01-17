@@ -2,13 +2,18 @@
 
   <%= link_to event.title, edit_admin_event_path(event)%>
 
-  <div id="icons">
-  <%= link_to 'View', event_url(event), :class=> 'view', :target => "_blank" %>
+  <div class="icons">
+    <%= link_to 'View', event_url(event), :class=> 'view', :target => "_blank" %>
   
-  <%= link_to 'Delete', admin_event_path(event), :class=> 'cancel confirm-delete delete', :title => t('.delete'),
-  :'data-confirm' => t('shared.admin.delete.message',
-      :title => t('.delete')
-    ),
-      :'data-method' => :delete %>
+    <%= link_to 'Delete', admin_event_path(event), :class=> 'cancel confirm-delete delete', :title => t('.delete'),
+    :'data-confirm' => t('shared.admin.delete.message',
+        :title => t('.delete')
+      ),
+        :'data-method' => :delete %>
   </div>
+  <div class="date">
+    <span class="from"><label><%= t('from') %></label><p>Jan 13, 2010, 13:00h</p></span>
+    <span class="to"><label><%= t('to') %></label><p>Jan 13, 2010, 13:00h</p></span>
+  </div>
+  
 </li>

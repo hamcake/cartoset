@@ -79,9 +79,19 @@ div#records ul#sortable_list li.on {background-color:white;}
 div#records ul#sortable_list li.on-hover {background-color:#FAFAFA;} 
 div#records ul#sortable_list li a {font:normal 15px Arial; color:#FF3366; text-decoration:underline; border-bottom:none;}
 div#records ul#sortable_list li a:hover {color:#B3002D;}
-div#records ul#sortable_list div#icons {position:absolute; left:30px!important; bottom:0px!important; bottom:23px!important; height:22px; margin:0;}
-div#records ul#sortable_list div#icons a {float:left; font:normal 13px Arial; color:#666666; text-decoration:underline; margin:0 15px 0 0;}
-div#records ul#sortable_list div#icons a:hover {color:#4D4D4D!important;}
+div#records ul#sortable_list div.icons {position:absolute; left:30px!important; bottom:0px!important; bottom:23px!important; height:22px; margin:0;}
+div#records ul#sortable_list div.icons a {float:left; font:normal 13px Arial; color:#666666; text-decoration:underline; margin:0 15px 0 0;}
+div#records ul#sortable_list div.icons a:hover {color:#4D4D4D!important;}
+div#records ul#sortable_list div.date {position:absolute; left:400px; top:8px; width:230px; height:70px;}
+div#records ul#sortable_list div.date span label {float:left; font:normal 11px Arial; color:#999999; text-transform:uppercase; width:auto;}
+div#records ul#sortable_list div.date span {float:left;}
+div#records ul#sortable_list div.date span.from {width:100%;}
+div#records ul#sortable_list div.date span.to {width:100%;}
+div#records ul#sortable_list div.date span.from label {margin:20px 15px 0;}
+div#records ul#sortable_list div.date span.to label {margin:7px 14px 0 33px;}
+div#records ul#sortable_list div.date span p {font:normal 15px Arial; color:#666666;}
+div#records ul#sortable_list div.date span.from p {margin:16px 0 0 8px;} 
+div#records ul#sortable_list div.date span.to p {margin:4px 0 0 8px;} 
 div#records ul#sortable_list a.view {background:url('/images/admin/common/view_icon.png') no-repeat 0 bottom; padding:1px 0 0 22px;}
 div#records ul#sortable_list a.delete {background:url('/images/admin/common/delete_icon.png') no-repeat 0 bottom; padding:1px 0 0 22px;}
 
@@ -90,7 +100,7 @@ div#records .on{background-color:white;}
 div#records .off,#records .on-hover{background-color:white;}
 div#records ul.clickable {width:941px; padding:0; margin:0 0 0 5px;}
 div#records ul.clickable li {list-style:none; width:100%; padding:0; margin:0; border-bottom:1px solid #E5E5E5; height:33px; position:relative;}
-div#records ul.clickable li a{float:left; padding:0; margin:0 5px 0 30px; color:#FF3366; width:auto; text-decoration:underline; vertical-align:middle;margin-bottom:2px;line-height:35px;display:block;border-bottom:0px none; font:normal 15px Arial;}
+div#records ul.clickable li a {float:left; padding:0; margin:0 5px 0 30px; color:#FF3366; width:auto; text-decoration:underline; vertical-align:middle;margin-bottom:2px;line-height:35px;display:block;border-bottom:0px none; font:normal 15px Arial;}
 div#records ul.clickable li p {color:#333333; padding:0; margin:17px 0 0 30px; vertical-align:middle;margin-bottom:2px;line-height:35px;display:block;border-bottom:0px none; font:normal 15px Arial;}
 div#records ul.clickable li a:hover {color:#B3002D;}
 div#records ul.clickable li p.ago {position:absolute; right:15px; top:0; color:#999999; font:normal 13px Arial; width:auto; margin:0!important; padding:0!important;}
@@ -99,6 +109,11 @@ div#records ul.clickable li p.ago {position:absolute; right:15px; top:0; color:#
 div#recent_activity,#records {width:952px; background:none;}
 div#recent_activity,#records div.top {float:left; width:100%; height:77px; background-color:none; background:url('/images/admin/backgrounds/top_grey.png') no-repeat 0 0; position:relative;}
 div#recent_activity,#records div.top h2 {padding:0 0 0 35px; font:normal 25px "Museo Sans"; color:#333333; line-height:77px;}
+div.top.events a.date {position:absolute; top:31px; left:450px; border-bottom:none!important; font:normal 16px "Museo Sans"; color:#666666;}
+div.top.events a.date span {float:right;  padding:0!important; margin:8px 5px !important; width:8px; background:url('/images/admin/common/arrow.png') no-repeat right 0; height:6px!important; }
+div.top.events a.date:hover {cursor:pointer;}
+div.top.events a.date.clicked span {background-position:0 -6px;}
+div.top.events p {position:absolute; top:15px; right:150px; font:normal 16px "Museo Sans"; color:#666666; width:auto; }
 div.top.features p {position:absolute; top:15px; right:150px; font:normal 16px "Museo Sans"; color:#666666; width:auto; }
 div#recent_activity,#records div.middle {float:left; width:100%; height:auto; background-color:none; background:url('/images/admin/backgrounds/middle_white.png') repeat-y 0 0;}
 div#recent_activity,#records div.bottom {float:left; width:100%; height:58px; background-color:none; background:url('/images/admin/backgrounds/bottom_grey.png') no-repeat 0 0;}
