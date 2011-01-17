@@ -1,20 +1,14 @@
 <li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(feature) -%>">
-  <span class='title'>
-    <%= feature.title %>
-    <span class="preview">&nbsp;</span>
-  </span>
-  <span class='actions'>
-    <%= link_to refinery_icon_tag("application_go.png"), feature_url(feature),
-        :title => t('.view_live'),
-        :target => "_blank" %>
-    <%= link_to refinery_icon_tag("application_edit.png"), edit_admin_feature_path(feature),
-         :title => t('.edit') %>
-    <%= link_to refinery_icon_tag("delete.png"), admin_feature_path(feature),
-        :class => "cancel confirm-delete",
-        :title => t('.delete'),
-        :'data-confirm' => t('shared.admin.delete.message',
+    <%= link_to feature.title, edit_admin_feature_path(feature), :target => "_blank" %>
+
+    <div id="icons">
+    <%= link_to 'View', feature_url(feature), :class=> 'view' %>
+    
+    <%= link_to 'Delete', admin_feature_path(feature), :class=> 'cancel confirm-delete delete', :title => t('.delete'),
+    :'data-confirm' => t('shared.admin.delete.message',
         :title => feature.title
       ),
         :'data-method' => :delete %>
-  </span>
+
+    </div>
 </li>

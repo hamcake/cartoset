@@ -73,7 +73,17 @@ div#actions ul li.last {margin:0; float:right;}
 div#actions ul li a {width:194px!important; height:40px!important; padding:40px 15px; margin:0; background:url('/images/admin/dashboard/big_button.png') no-repeat 0 0; font:normal 21px "Museo Sans"; color:#333333; line-height:23px; border:none; text-align:center;}
 div#actions ul li a:hover {background:url('/images/admin/dashboard/big_button.png') no-repeat 0 -126px; color:black;}
 div#records {width:952px; margin:20px 0 0 0;}
-div#records ul#sortable_list {float:left; width:100%;}
+div#records ul#sortable_list {float:left; width:900px;}
+div#records ul#sortable_list li {position:relative; height:70px; padding:20px 0 0 0;}
+div#records ul#sortable_list li a {font:normal 15px Arial; color:#FF3366; text-decoration:underline; border-bottom:none; margin:;}
+div#records ul#sortable_list li a:hover {color:#B3002D;}
+div#records ul#sortable_list div#icons {position:absolute; left:0!important; bottom:0px!important; bottom:23px!important; height:22px;}
+div#records ul#sortable_list div#icons a {float:left; font:normal 13px Arial; color:#666666; text-decoration:underline; margin:0 15px 0 0;}
+div#records ul#sortable_list div#icons a:hover {color:#4D4D4D!important;}
+div#records ul#sortable_list a.view {background:url('/images/admin/common/view_icon.png') no-repeat 0 bottom; padding:1px 0 0 22px;}
+div#records ul#sortable_list a.delete {background:url('/images/admin/common/delete_icon.png') no-repeat 0 bottom; padding:1px 0 0 22px;}
+
+
 div#records .on{background-color:white;}
 div#records .off,#records .on-hover{background-color:white;}
 div#records ul.clickable {width:941px; padding:0; margin:0 0 0 5px;}
@@ -85,7 +95,8 @@ div#records ul.clickable li p.ago {position:absolute; right:15px; top:0; color:#
 
 /* LIST OF ACTIVITIES, FEATURES,... */
 div#recent_activity,#records {width:952px; background:none;}
-div#recent_activity,#records div.top {float:left; width:100%; height:77px; background-color:none; background:url('/images/admin/backgrounds/top_grey.png') no-repeat 0 0;}
+div#recent_activity,#records div.top {float:left; width:100%; height:77px; background-color:none; background:url('/images/admin/backgrounds/top_grey.png') no-repeat 0 0; position:relative;}
 div#recent_activity,#records div.top h2 {padding:0 0 0 35px; font:normal 25px "Museo Sans"; color:#333333; line-height:77px;}
+div.top.features p {position:absolute; top:15px; right:150px; font:normal 16px "Museo Sans"; color:#666666; width:auto; }
 div#recent_activity,#records div.middle {float:left; width:100%; height:auto; background-color:none; background:url('/images/admin/backgrounds/middle_white.png') repeat-y 0 0;}
 div#recent_activity,#records div.bottom {float:left; width:100%; height:58px; background-color:none; background:url('/images/admin/backgrounds/bottom_grey.png') no-repeat 0 0;}
