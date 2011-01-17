@@ -11,9 +11,9 @@
       ),
         :'data-method' => :delete %>
   </div>
-  <div class="date">
-    <span class="from"><label><%= t('from') %></label><p>Jan 13, 2010, 13:00h</p></span>
-    <span class="to"><label><%= t('to') %></label><p>Jan 13, 2010, 13:00h</p></span>
+  <div class="date"><!-- Jan 13, 2010, 13:00h -->
+    <span class="from"><label><%= t('from') %></label><p><%= event.from.strftime("%B %d, %Y, %H:%Mh")%></p></span>
+    <span class="to"><label><%= t('to') %></label><p><%= event.to.strftime("%B %d, %Y, %H:%Mh") %></p></span>
   </div>
   
 </li>

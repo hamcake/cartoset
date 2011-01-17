@@ -82,7 +82,7 @@ div#records ul#sortable_list li a:hover {color:#B3002D;}
 div#records ul#sortable_list div.icons {position:absolute; left:30px!important; bottom:0px!important; bottom:23px!important; height:22px; margin:0;}
 div#records ul#sortable_list div.icons a {float:left; font:normal 13px Arial; color:#666666; text-decoration:underline; margin:0 15px 0 0;}
 div#records ul#sortable_list div.icons a:hover {color:#4D4D4D!important;}
-div#records ul#sortable_list div.date {position:absolute; left:400px; top:8px; width:230px; height:70px;}
+div#records ul#sortable_list div.date {position:absolute; left:360px; top:8px; width:280px; height:70px;}
 div#records ul#sortable_list div.date span label {float:left; font:normal 11px Arial; color:#999999; text-transform:uppercase; width:auto;}
 div#records ul#sortable_list div.date span {float:left;}
 div#records ul#sortable_list div.date span.from {width:100%;}
