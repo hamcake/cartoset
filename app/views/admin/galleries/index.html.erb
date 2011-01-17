@@ -42,6 +42,9 @@
     <% end %>
   <% else %>
     <% if @galleries.any? %>
+      <div class="top galleries">
+          <h2>All galleries</h2>
+      </div>
       <%= will_paginate @galleries,
                          :previous_label => '&laquo;',
                          :next_label => '&raquo;' %>
