@@ -64,6 +64,8 @@ div.flash_notice a#flash_close {top:35px; right:20px; width:9px; height:9px; tex
 div.flash_notice a#flash_close:hover {background-position:0 -9px; border:none;}
 
 /*DASHBOARD*/
+#recent_activity {background:none!important; padding:0!important;}
+
 div#actions {float:left; width:100%; margin:0; padding:0; background:none;}
 div#actions ul {width:100%;}
 div#actions ul li {float:left; display:inline-block; width:auto!important; height:126px!important; margin:0 14px 0 0 ; background:none;}
@@ -75,10 +77,11 @@ div#records ul#sortable_list {float:left; width:100%;}
 div#records .on{background-color:white;}
 div#records .off,#records .on-hover{background-color:white;}
 div#records ul.clickable {width:941px; padding:0; margin:0 0 0 5px;}
-div#records ul.clickable li {list-style:none; width:100%; padding:0; margin:0; border-bottom:1px solid #E5E5E5; height:33px;}
-div#records ul.clickable li a{padding:0;vertical-align:middle;margin-bottom:2px;line-height:35px;display:block;border-bottom:0px none; font:normal 15px Arial; ; margin:17px 0 0 30px; color:#333333;}
-div#records ul.clickable li a p {color:#FF3366; text-decoration:underline;}
-div#records ul.clickable li a:hover p {}
+div#records ul.clickable li {list-style:none; width:100%; padding:0; margin:0; border-bottom:1px solid #E5E5E5; height:33px; position:relative;}
+div#records ul.clickable li a{float:left; padding:0; margin:0 5px 0 30px; color:#FF3366; width:auto; text-decoration:underline; vertical-align:middle;margin-bottom:2px;line-height:35px;display:block;border-bottom:0px none; font:normal 15px Arial;}
+div#records ul.clickable li p {color:#333333; padding:0; margin:17px 0 0 30px; vertical-align:middle;margin-bottom:2px;line-height:35px;display:block;border-bottom:0px none; font:normal 15px Arial;}
+div#records ul.clickable li a:hover {color:#B3002D;}
+div#records ul.clickable li p.ago {position:absolute; right:15px; top:0; color:#999999; font:normal 13px Arial; width:auto; margin:0!important; padding:0!important;}
 
 /* LIST OF ACTIVITIES, FEATURES,... */
 div#recent_activity,#records {width:952px; background:none;}
