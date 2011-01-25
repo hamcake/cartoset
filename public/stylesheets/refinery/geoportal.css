@@ -92,6 +92,11 @@ div#records ul#sortable_list div.date span.to label {margin:7px 14px 0 33px;}
 div#records ul#sortable_list div.date span p {font:normal 15px Arial; color:#666666;}
 div#records ul#sortable_list div.date span.from p {margin:16px 0 0 8px;} 
 div#records ul#sortable_list div.date span.to p {margin:4px 0 0 8px;} 
+div#records ul#sortable_list div.location {position:absolute; left:732px; top:20px; width:200px; height:70px;}
+div#records ul#sortable_list div.location p {float:left; font:normal 15px Arial; color:#666666; width:100%; margin:0;} 
+div#records ul#sortable_list div.location a.coords {float:left; font:normal 13px Arial; color:#FF3366; text-decoration:underline; margin:2px 0 0 0;}
+div#records ul#sortable_list div.location a.coords:hover {color:#B3002D; cursor:pointer;}
+
 div#records ul#sortable_list a.view {background:url('/images/admin/common/view_icon.png') no-repeat 0 bottom; padding:1px 0 0 22px;}
 div#records ul#sortable_list a.delete {background:url('/images/admin/common/delete_icon.png') no-repeat 0 bottom; padding:1px 0 0 22px;}
 
