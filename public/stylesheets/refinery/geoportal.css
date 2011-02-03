@@ -1,4 +1,7 @@
 body {margin:0; padding:0;}
+body.login {background:url('/images/admin/login/bkg_login.jpg') repeat-x #141414; color:white;}
+body.login label {color:white;}
+
 ul {list-style:none!important;}
 /*FONTS FONT-FACE*/
 @font-face {
@@ -16,6 +19,10 @@ ul {list-style:none!important;}
 	font-weight: normal;
 	font-style: normal;
 }
+
+/*LOGIN PAGE*/
+body.login header {display:none;}
+
 
 /* SEARCH PARTIAL (_search.html.erb) */
 .search_form{position:relative; width:705px; height:auto;}
